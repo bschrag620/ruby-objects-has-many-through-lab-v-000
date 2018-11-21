@@ -17,7 +17,7 @@ class Artist
     new_song.artist = self
     new_song.genre = genre
     self.songs << new_song
-
+    puts "songs count: #{self.songs.count}"
   end
 
 end

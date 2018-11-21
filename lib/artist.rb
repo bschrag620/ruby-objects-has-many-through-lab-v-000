@@ -8,8 +8,6 @@ class Artist
   end
 
   def self.all
-    @@all.collect do |artist|
-      artist.name
-    end
+    @@all
   end
 end

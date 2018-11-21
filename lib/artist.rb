@@ -6,4 +6,10 @@ class Artist
     self.name = name
     @@all << self
   end
+
+  def self.all
+    @@all.collect do |artist|
+      artist.name
+    end
+  end
 end

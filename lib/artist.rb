@@ -5,6 +5,7 @@ class Artist
   def initialize(name)
     self.name = name
     self.songs = []
+    self.genres =[]
     @@all << self
   end
 
@@ -17,6 +18,9 @@ class Artist
     new_song.artist = self
     new_song.genre = genre
     self.songs << new_song
+    if !self.genres.include?(genre)
+      self.genres << genre
+    end
     new_song
   end
 

@@ -8,6 +8,7 @@ class Song
     self.name = name
     self.artist = artist
     self.genre = genre
+    genre.songs << self
     @@all << self
   end
 

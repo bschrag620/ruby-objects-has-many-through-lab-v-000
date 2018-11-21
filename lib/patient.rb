@@ -17,6 +17,6 @@ class Patient
     new_appointment = Appointment.new(date, self, doctor)
     self.appointments << new_appointment
     self.doctor = doctor
-    
+    new_appointment
   end
 end
